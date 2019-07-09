@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+
+    <ion-title>Agregar contacto</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  
+    <ion-item>
+        <ion-label>Elegir persona(s)</ion-label>
+        <ion-select okText="Aceptar" cancelText="Cancelar" multiple="true">
+          <ion-select-option *ngFor="let person of personas">{{person.primer_nombre}}</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+</ion-content>
